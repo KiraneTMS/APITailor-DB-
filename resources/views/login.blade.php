@@ -25,7 +25,7 @@
                     <div class="inputBx">
                         @csrf
                         <input type="text" name="email" required="required">
-                        <span>Login</span>
+                        <span>Email</span>
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <div class="inputBx password">

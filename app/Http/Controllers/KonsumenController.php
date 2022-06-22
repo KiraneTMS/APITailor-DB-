@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Konsumen;
 use Illuminate\Support\Facades\Hash;
+use Session;
 
 class KonsumenController extends Controller
 {
@@ -17,8 +18,9 @@ class KonsumenController extends Controller
             return "wrong login";
         }
         else{
-            $req->session()->put('konsumen', $konsumen['konsumen']);
-            return redirect('/');
+            $req->session()->put('konsumen', $konsumen);
+            // dd($konsumen);
+            return redirect('/home');
         }
     }
 }

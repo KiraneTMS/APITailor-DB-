@@ -79,11 +79,11 @@
                      </div>
                   </div>
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
-                     <ul class="email">
-                        <li><a href="#">Call: {{session('konsumen')->no_hp}}</a></li>
-                        <li><a href="#">Email: {{session('konsumen')->email}}</a></li>
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                     </ul>
+                            <ul class="email">
+                                <li><a href="#">Call: {{(session('konsumen')->no_hp)}}</a></li>
+                                <li><a href="#">Email: {{(session('konsumen')->email)}}</a></li>
+                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            </ul>
                   </div>
                </div>
             </div>
